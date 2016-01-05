@@ -1,8 +1,10 @@
 var app = angular.module('app', ['ui.router'])
 
-	.config(['$logProvider', '$stateProvider', function ($logProvider, $stateProvider) {
+	.config(['$logProvider', '$stateProvider', '$urlRouterProvider', function ($logProvider, $stateProvider,$urlRouterProvider) {
 
 	$logProvider.debugEnabled(true);
+		
+	$urlRouterProvider.otherwise('/');
 
 		$stateProvider
 			.state('home', {
