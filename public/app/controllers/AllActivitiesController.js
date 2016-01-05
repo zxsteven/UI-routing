@@ -1,7 +1,7 @@
 angular.module('app')
-	.controller('AllActivitiesController', ['dataService', 'notifier', '$state', AllActivitiesController]);
+	.controller('AllActivitiesController', ['dataService', 'notifier', '$state', '$activities', AllActivitiesController]);
 
-function AllActivitiesController(dataService, notifier, $state) {
+function AllActivitiesController(dataService, notifier, $state, $activities) {
 
 	var vm = this;
 
